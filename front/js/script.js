@@ -7,7 +7,6 @@ fetch("http://localhost:3000/api/products")
     })
 
     .then (function (item) {
-        // let items = document.querySelector(".items");
         item.forEach(element => {
             console.table(element);
             document.querySelector(".items").innerHTML +=   `<a href="./product.html?id=${element._id}">
